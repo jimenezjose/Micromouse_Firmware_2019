@@ -18,10 +18,9 @@ Description:     Abstract Mouse interface with dependent hardware functions.
   #include <iostream>
   #include <utility>
   #include <vector>
-  #include <array>
   #include <deque>
   #include <climits>
-  #include "Maze/Maze.h"
+  #include <Maze.h>
   #include "utility/Orientation.hpp"
 #else
   #error "board not supported." 
@@ -136,14 +135,14 @@ public:
       if( openNeighbor->distance == cell->distance - 1 ) {
         /* hueristic to move closer to the target */
         explore_stack.push_back( openNeighbor );
-	if( openNeighbor->distance == 0 ) {
-	  explore_stack.push_back( openNeighbor );
-	}
-	return true;
+	      if( openNeighbor->distance == 0 ) {
+	        explore_stack.push_back( openNeighbor );
+	      }
+	      return true;
       } 
       else if( openNeighbor->distance == 0 && !hasVisited( openNeighbor ) ) {
         /* visit all target nodes in quad-cell solution */
-	explore_stack.push_back( openNeighbor );
+	      explore_stack.push_back( openNeighbor );
         return true;
       }
     }

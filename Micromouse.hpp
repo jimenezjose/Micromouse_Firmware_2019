@@ -12,6 +12,7 @@ Description:     Orientational logic functions for navigation.
 *******************************************************************************/
 #ifndef MICROMOUSE_HPP
 #define MICROMOUSE_HPP
+#include "Mouse.hpp"
 
 class Micromouse : public Mouse {
 public:
@@ -22,8 +23,7 @@ public:
   %              row  - starting row for mouse.
   %              column - starting column for mouse.
   *****************************************************************************/
-  Micromouse( Maze & maze, int row, int column ) 
-      : Mouse(maze, row, column), ref_maze(maze) {}
+  Micromouse( Maze & maze, int row, int column ) : Mouse(maze, row, column) {}
 
   /*****************************************************************************
   % Routine Name: rotateTo
