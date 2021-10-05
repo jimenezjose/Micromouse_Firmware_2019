@@ -1,3 +1,13 @@
+/*******************************************************************************
+                                                    Jose Jorge Jimenez-Olivas
+                                                    Brandon Cramer
+                                                    Chris Robles
+                                                    Srinivas Venkatraman
+                 University of California, San Diego
+                      IEEE Micromouse Team 2019
+File Name:       Micromouse_2019.hpp 
+Description:     Main source file to run micromouse firmware.
+*******************************************************************************/
 #include <Maze.h>
 #include "Micromouse.hpp"
 
