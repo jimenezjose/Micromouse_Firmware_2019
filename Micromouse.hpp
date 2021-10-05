@@ -7,8 +7,8 @@
                  University of California, San Diego
                       IEEE Micromouse Team 2019
 
-File Name:       Orientation.hpp 
-Description:     Orientational logic functions for navigation.
+File Name:       Micromouse.hpp 
+Description:     Hardware stack implementation of miromouse navigation.
 *******************************************************************************/
 #ifndef MICROMOUSE_HPP
 #define MICROMOUSE_HPP
